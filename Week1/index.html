@@ -7,85 +7,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Portfolio</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">Anshul<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div class="menu-btn" id="menuBtn">☰</div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Mobile Nav -->
+    <ul class="mobile-nav" id="mobileNav">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+
+    <!-- HERO -->
     <section id="home" class="hero">
-        <div class="container">
-            <h1>Anshul Bhattarai</h1>
-            <p>Web Developer & Designer</p>
-            <a href="#projects" class="btn">View Work</a>
+        <div class="container hero-content">
+            <h1 class="hero-title">Anshul Bhattarai</h1>
+            <p class="hero-subtitle">Web Developer • Designer • Learner</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer with experience in creating modern websites and applications.</p>
-                    <p>I love clean code and beautiful design.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://scontent-bom5-1.xx.fbcdn.net/v/t39.30808-1/534172792_1286269583208212_403689008595962385_n.jpg?stp=c0.0.720.720a_dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=fe9JUkqlWTcQ7kNvwF6aVW5&_nc_oc=AdkVSEQ8EMPM3hL9PP1vAFTJFTqznT7hQAMmPhI7e8maGva1gkXjcl8toj0ZC1BpWls&_nc_zt=24&_nc_ht=scontent-bom5-1.xx&_nc_gid=Ya4GS6atYJzhJhxsvZSI5g&oh=00_AfjahPLWOvPJ0IHdnPDmMTX6KWXAHgnNn5oOCrQ5p0Tb1Q&oe=69207C00">
-                </div>
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! I'm Anshul — a passionate and creative web developer focused on building clean, modern, and user-friendly digital experiences.</p>
+                <p>I enjoy transforming ideas into functional designs using code and creativity.</p>
+            </div>
+
+            <div class="about-img">
+                <img src="https://scontent.fktm9-2.fna.fbcdn.net/v/t39.30808-1/534172792_1286269583208212_403689008595962385_n.jpg?stp=c0.0.720.720a_dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=fe9JUkqlWTcQ7kNvwF6aVW5&_nc_oc=AdkVSEQ8EMPM3hL9PP1vAFTJFTqznT7hQAMmPhI7e8maGva1gkXjcl8toj0ZC1BpWls&_nc_zt=24&_nc_ht=scontent.fktm9-2.fna&_nc_gid=ObVN5-ytRH4QV6ty2-RVlA&oh=00_AfgF8kSh7VTtNebdwADrNuOKgZ22sI-VQiuPiTEZqZUtCg&oe=69207C00"
+                     alt="Anshul">
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2 class="center">My Projects</h2>
+
             <div class="projects-grid">
                 <div class="project-card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxKA7HvO10GTQBbTTroY57QxgaI-W6kfyUw&s">
                     <div class="project-info">
                         <h3>Weather App</h3>
-                        <p>Simple and interactive weather app.</p>
+                        <p>A clean and interactive weather application with real-time data.</p>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <img src="https://img-c.udemycdn.com/course/750x422/3322842_bac7.jpg">
                     <div class="project-info">
                         <h3>Drive Discipline</h3>
-                        <p>Made a simple racing game using Unity called Drive Discipline which taught players road safety rules and regulations.</p>
+                        <p>A Unity-based racing game teaching players about road-safety and discipline.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+        <div class="container center">
             <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p>Email: AnshulBhattarai@gmail.com</p>
-                <p>Phone: 9823105663</p>
-            </div>
+            <p>Email: <strong>AnshulBhattarai@gmail.com</strong></p>
+            <p>Phone: <strong>9823105663</strong></p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Anshul Bhattarai. All rights reserved.</p>
-        </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Anshul Bhattarai. All Rights Reserved.</p>
     </footer>
+
+<script>
+    // Mobile Menu Toggle
+    function toggleMenu() {
+        document.getElementById('mobileNav').classList.toggle('active');
+    }
+    document.getElementById('menuBtn').onclick = toggleMenu;
+
+    // Section Reveal Animation
+    const sections = document.querySelectorAll(".section");
+    const reveal = () => {
+        sections.forEach(sec => {
+            const top = sec.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) sec.classList.add("visible");
+        });
+    };
+    window.addEventListener("scroll", reveal);
+    reveal();
+</script>
+
 </body>
 </html>
